@@ -1,0 +1,3 @@
+import TermoGraph
+
+TermoGraph.TermoGraph()
