@@ -41,6 +41,26 @@ def TermoCount(type):
             points.append(funcao)
             T += 1
 
+    if type == "B":
+        T = 0
+        while T <= 300:
+            funcao = 0.000000000000*pow(10,0)*pow(T,0) -0.246508183460*pow(10,-3)*T + 0.590404211710*pow(10,-5)*pow(T,2) -0.132579316360*pow(10,-8)*pow(T,3) + 0.156682919010*pow(10,-11)*pow(T,4) - 0.169445292400*pow(10,-14)*pow(T,5) + 0.629903470940*pow(10,-18)*pow(T,6)
+            points.append(funcao)
+            T += 1
+
+    if type == "S":
+        T = 0
+        while T <= 300:
+            funcao = 0*pow(10,0)*pow(T,0) + 0.540313308631*pow(10,-2)*T +  0.125934289740*pow(10,-4)*pow(T,2) - 0.232477968689*pow(10,-7)*pow(T,3) + 0.322028823036*pow(10,-10)*pow(T,4) - 0.331465196389*pow(10,-13)*pow(T,5) + 0.255744251786*pow(10,-16)*pow(T,6) - 0.125068871393*pow(10,-19)*pow(T,7) + 0.271443176145*pow(10,-23)*pow(T,8) 
+            points.append(funcao)
+            T += 1
+
+    if type == "R":
+        T = 0
+        while T <= 300:
+            funcao = 0*pow(10,-1)*pow(T,0) + 0.528961729765*pow(10,-2)*T +  0.139166589782*pow(10,-4)*pow(T,2) - 0.238855693017*pow(10,-7)*pow(T,3) + 0.356916001063*pow(10,-10)*pow(T,4) - 0.462347666298*pow(10,-13)*pow(T,5) + 0.500777441034*pow(10,-16)*pow(T,6) - 0.373105886191*pow(10,-19)*pow(T,7) + 0.157716482367*pow(10,-22)*pow(T,8) - 0.281038625251*pow(10,-26)*pow(T,9) 
+            points.append(funcao)
+            T += 1
     return points
 
-print(TermoCount("K")[300])
+#print(TermoCount("R")[1])
