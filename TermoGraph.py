@@ -8,6 +8,9 @@ def TermoGraph():
     N = TermoCount("N")
     T = TermoCount("T")
     K = TermoCount("K")
+    B = TermoCount("B")
+    S = TermoCount("S")
+    R = TermoCount("R")
 
     pyplot.plot(E)
     pyplot.text(300,E[300], r'E')
@@ -19,5 +22,11 @@ def TermoGraph():
     pyplot.text(300,T[300], r'T')
     pyplot.plot(K)
     pyplot.text(300,K[300], r'K')
+    pyplot.plot(B)
+    pyplot.text(300,B[300], r'B')
+    pyplot.plot(S)
+    pyplot.text(300,S[300], r'S')
+    pyplot.plot(R)
+    pyplot.text(300,R[300], r'R')
 
     pyplot.show()
